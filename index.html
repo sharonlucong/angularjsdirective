@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <title>Momentum</title>
+    <meta name="description" content="Welcome to Momentum Website">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="js/directive.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <momentum-nav>
+        <nav-header>Momentum</nav-header>
+        <nav-item url="photography">Photography</nav-item>
+        <nav-item url="about">About</nav-item>
+        <nav-item url="blog">Blog</nav-item>
+        <nav-item url="contact">Contact</nav-item>
+        <nav-item url="readme">Read Me</nav-item>
+    </momentum-nav>
+    <div class="container">
+        <div ui-view></div>
+    </div>
+</body>
+
+</html>

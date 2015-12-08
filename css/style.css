@@ -1,0 +1,79 @@
+html,
+body {
+    width: 100%;
+    margin: 0;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.navBg {
+    display: block;
+    height: 593px;
+    width: 100%;
+    background-image: url('../assets/surfimage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 30px;
+}
+
+.navItem {
+    color: #aaa;
+    margin-left: 20px;
+    font-weight: normal;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.navItem:hover {
+    color: #363636;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    padding-bottom: 2px;
+    border-bottom: 3px solid #000;
+    cursor: pointer;
+}
+
+.active {
+    color: #363636;
+    padding-bottom: 2px;
+    border-bottom: 3px solid #000;
+}
+
+.navHeader {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #323232;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 20px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.container {
+    margin: 20px 5%;
+}
+
+[ui-view].ng-enter,
+[ui-view].ng-leave {
+    position: absolute;
+    left: 5%;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+    opacity: 0;
+}
+
+[ui-view].ng-enter-active {
+    opacity: 1;
+}
+
+[ui-view].ng-leave {
+    opacity: 1;
+}
+
+[ui-view].ng-leave-active {
+    opacity: 0;
+}
